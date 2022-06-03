@@ -1,19 +1,15 @@
 name: 'JSON to environment variables'
-author: 'Roberto García'
-description: 'This action reads json file and writes its content as environment variables with optional secret masking'
-branding:
-  icon: 'lock'
-  color: 'red'
+description: 'Converts JSON string into environment variables'
 inputs:
   json-string: 
     description: 'JSON string to parse.'
     required: true
   prefix:
-    description: 'The prefix for variables.'
+    description: 'Prefix for variables'
     required: false
     default: 'json'
   masked:
-    description: 'Mask variables as secrets.'
+    description: 'Mask variables as secrets'
     required: false
     default: 'false'
 runs:

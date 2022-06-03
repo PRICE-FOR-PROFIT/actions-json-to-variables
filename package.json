@@ -1,5 +1,5 @@
 {
-  "name": "json-to-variables",
+  "name": "action-json-to-variables",
   "version": "1.1.0",
   "description": "This action reads json file and writes its content as environment variables with optional secret masking",
   "main": "index.js",
@@ -7,17 +7,7 @@
     "build": "ncc build index.js --license licenses.txt",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rgarcia-phi/json-to-variables.git"
-  },
-  "keywords": [],
-  "author": "Roberto García",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/rgarcia-phi/json-to-variables/issues"
-  },
-  "homepage": "https://github.com/rgarcia-phi/json-to-variables#readme",
   "dependencies": {
     "@actions/core": "^1.2.6",
     "@actions/github": "^4.0.0"
