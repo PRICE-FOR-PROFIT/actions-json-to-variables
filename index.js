@@ -3,15 +3,11 @@ const path = require('path');
 const core = require('@actions/core');
 
 try {
-    const fileName = core.getInput('filename', { required: true });
+    const jsonString = core.getInput('json-string', { required: true });
     const prefix = core.getInput('prefix') || 'json';
     const masked = (core.getInput('masked') || 'false') === 'true';
 
-    const fullPath = path.resolve(fileName);
-    core.info(`Processing file: ${fullPath}`);
-
-    const rawdata = fs.readFileSync(fullPath);
-    const rootObj = JSON.parse(rawdata);
+    const rootObj = JSON.parse(jsonString);
 
     const processVariable = (variable, name) => {
 

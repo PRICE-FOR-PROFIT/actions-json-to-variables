@@ -5,8 +5,8 @@ branding:
   icon: 'lock'
   color: 'red'
 inputs:
-  filename: 
-    description: 'The json file.'
+  json-string: 
+    description: 'JSON string to parse.'
     required: true
   prefix:
     description: 'The prefix for variables.'
