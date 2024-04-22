@@ -1,5 +1,6 @@
 # JSON to variables
 This action reads json file and writes its content as environment variables with optional secret masking.
+Placeholder text
 
 ## Inputs
 
